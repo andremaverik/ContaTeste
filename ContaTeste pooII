@@ -1,0 +1,38 @@
+public class ContaTeste{
+	private String nome;
+	private Double contaCorrente;
+	private Double contaPupança;
+	public ContaTeste(){
+		nome = "André";
+		contaCorrente = (double) 0;
+		contaPupança = (double) 0;
+	}
+	public ContaTeste(String s,double p, double g) {
+		nome = s;
+		contaCorrente = p;
+		contaPupança = g;
+	}
+	public void SetNome(String s) {
+		nome=s;
+	}	
+	public String getnome() {
+		return nome;
+	}	
+	public void setPotenciaMax(double p) {
+		contaCorrente = p;
+	}	
+	public double getPotenciaMax() {
+		return contaCorrente;
+	}	
+	public void setGracaoAtual(double g) {
+		contaPupança = g;
+	}	
+	public double getGeracaoAtual() {
+		return contaPupança;
+	}	
+	public void mostrarConta() {
+		System.out.printf("\n Nome Titular da Conta: %s \n", nome);
+		System.out.printf("Conta corrente: %8.2f\n", contaCorrente);
+		System.out.printf("conta pupança: %8.2f\n", contaPupança);		
+	}
+}
